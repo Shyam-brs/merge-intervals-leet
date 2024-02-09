@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merge Intervals using leet</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Merge Intervals Leet</h2>
+      <p>
+        The merge function sorts the intervals by their start time, initializes
+        a result array next, and then iterates through the sorted intervals. If
+        the end time of the current interval in next is greater than or equal to
+        the start time of the next interval in the original array, it merges the
+        two intervals by taking the maximum of their end times. Otherwise, it
+        adds the next interval to the next array.
+      </p>
+      <p>
+        The intervals are represented as pairs of numbers, where the first
+        number is the start of the interval and the second number is the end of
+        the interval.
+      </p>
+      <label for="intervalInput"
+        >Enter Intervals (e.g., [1,4], [3,6], [8,10], [15,19]):</label
+      >
+      <input type="text" id="intervalInput" placeholder="Enter intervals" />
+      <button onclick="mergeIntervals()">Merge Intervals</button>
+
+      <div id="result"></div>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
